@@ -28,7 +28,7 @@ node {
          * First, the incremental build number from Jenkins
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
-        docker.withRegistry('https://registry.hub.docker.com', '7863') {
+        docker.withRegistry('https://registry.hub.docker.com', 'docker123') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
