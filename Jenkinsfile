@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("7863/sample")
+        app = docker.build("ajeetraina/jenkins:latest")
     }
 
     stage('Test image') {
